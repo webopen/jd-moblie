@@ -1,0 +1,289 @@
+@charset "utf-8";
+body{
+    background: #f5f5f5;
+}
+/*主体*/
+.jd_layout {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.top{
+    width: 100%;
+    position: fixed;
+    top: 0;  
+    z-index: 999;
+    max-width: 640px;
+    min-width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: rgba(201,21,35,0);
+}
+.top h1{
+    height: 40px;
+    position: absolute;
+    top:4px;
+    left: 5px;
+}
+.top h1 .icon_logo{
+    display: block;
+    width:60px;
+    height: 36px;
+    background-position: 0 -103px;
+}
+.top .login{
+    position: absolute;
+    top:0;
+    right: 0;
+    line-height: 40px;
+    color: #FFF;
+    width: 50px;
+    text-align: center;
+    
+}
+.top form{
+    width: 100%;
+    height: 40px;
+    padding-left: 65px;
+    padding-right: 50px;
+    position: relative;
+}
+.top form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-top: 4px;
+    padding-left: 25px;
+}
+.top  form span{
+    position: absolute;
+    top:10px;
+    left: 70px;
+    background-position: -60px -109px;
+    width: 20px;
+    height: 20px;
+}
+/*==========轮播图============*/
+.banner{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.banner ul{
+    width: 1000%;
+    transform: translatex(-10%);
+}
+.banner ul li {
+    float: left;
+    width: 10%;
+}
+.banner ul li a{
+    width: 100%;
+    display: block;
+}
+.banner ul li a img{
+    width: 100%;
+    display: block;
+}
+.banner ol{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -34px;
+    width: 68px;
+    height: 6px;
+}
+.banner ol li{
+    float: left;
+    margin: 0 5px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+}
+.banner ol li.active{
+ /*   background-color: #e0e0e0;*/
+background-color: white;
+}
+/*=======导航========*/
+.nav{
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ccc;
+}
+.nav ul{
+    width: 100%;
+    padding: 15px 0;
+}
+.nav ul li{
+    float: left;
+    width: 20%;
+}
+.nav ul li a{
+    width: 100%;
+    display: block;
+}
+.nav ul li a img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+.nav p{
+    text-align: center;
+    padding: 8px 0 ;
+    color: #666;
+    font-size: 12px;
+}
+/*=========商品部分===========*/
+main .product_box{
+    border: 1px solid #e0e0e0;
+    margin: 10px 5px 0;
+    /*padding: 0 5px;*/
+    background: white;
+    /*height: 200px;*/
+}
+/*========掌上秒杀=============*/
+main .product_box .product_title{
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+}
+main .product_box .product_title .sk{
+    float: left;
+    font-size: 15px;
+    color: #d8505c;
+    margin-right: 10px;
+}
+main .product_box .product_title .sk::before{
+    width: 16px;
+    height: 20px;
+    float: left;
+    margin: 7px 10px;
+    background-image: url("../images/index/seckill-icon.png");
+    -webkit-background-size:16px 20px;
+    background-size:16px 20px;
+}
+main .product_box .product_title .time{}
+main .product_box .product_title .time span{
+    float: left;
+    width: 15px;
+    height: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    background-color: #333;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+main .product_title .time span:nth-child(3n){
+    width: 3px;
+    color: #333;
+    background-color: #fff;
+}
+main .product_box .product_show{}
+main .product_box .product_show ul{
+    padding: 10px 0;
+}
+main .product_box .product_show li{
+    width: 33.33333%;
+    float: left;
+}
+main .product_box .product_show li a{
+    width: 100%;
+    display: block;
+    padding: 0 18%;
+    border-right: 1px solid #e0e0e0;
+}
+main .product_box .product_show li:last-child a{
+    border: 0;
+}
+main .product_box .product_show li a img{
+
+    width: 100%;
+    display: block;
+}
+main .product_box .product_show li p{
+    text-align: center;
+    color: #d8505c;
+    padding: 3px 0;
+    font-size: 12px;
+}
+main .product_box .product_show li p:last-child{
+    text-decoration: line-through;
+    color: #666;
+}
+/*=========京东超市============*/
+main .product_box h3{
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    font-size: 15px;
+}
+main .product_box h3::before{
+    content: "";
+    width: 3px;
+    height: 12px;
+    float: left;
+    margin-left: 8px;
+    margin-top: 11px;
+    background-color: #d8505c;
+}
+main .product_box h3 a{
+    float: left;
+    margin-left: 5px;
+}
+/*======商品组合样式=======*/
+a.w_50{
+    width: 50%;
+    display: block;
+}
+a.w_50 img{
+    width: 100%;
+    height: 100%;
+    display: block;
+   
+}
+.bl{
+    border-left: 1px solid #e0e0e0;
+}
+.br{
+ border-right: 1px solid #e0e0e0;
+}
+.bb{
+    border-bottom: 1px solid #e0e0e0;
+}
+/*底部*/
+.bottom-bar-pannel{
+/*	border: red solid 1px;*/
+	position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+}
+.bottom-bar-pannel{
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ccc;
+}
+.bottom-bar-pannel ul{
+    width: 100%;
+}
+.bottom-bar-pannel ul li{
+    float: left;
+    width: 20%;
+}
+.bottom-bar-pannel ul li a{
+    width: 100%;
+    display: block;
+}
+.bottom-bar-pannel ul li a img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}

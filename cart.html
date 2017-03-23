@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+<title>购物车</title>
+<link rel="stylesheet" href="css/cart.css"/>
+</head>
+<body>
+<header class="jd_topBar">
+    <a href="index.html" class="icon_back"></a>
+    <h2>购物车</h2>
+    <a href="#" class="icon_menu"></a>
+</header>
+<div class="jd_view">
+    <div class="jd_safeTip">
+        <p>您正在安全购物环境中，请放心购物</p>
+    </div>
+    <div class="jd_shop">
+        <div class="jd_shop_name">
+            <div class="shop_check">
+                <input class="jd_check_box jdzy_check" type="checkbox" checked="checked">
+            </div>
+            <div class="shop_title clearfix">
+                <img src="images/cart/buy-logo.png" alt=""/>
+                <span class="name">京东自营</span>
+                <span class="tip">您享受满99元免运费服务</span>
+            </div>
+        </div>
+        <div class="jd_shop_product">
+            <ul>
+                <li>
+                    <div class="product_check">
+                        <input class="jd_check_box jdzy_check" type="checkbox" checked="checked">
+                    </div>
+                    <div class="product_info clearfix">
+                        <a href="#" class="image"><img src="images/cart/pc.jpg" alt=""/></a>
+                        <div class="info">
+                            <a href="#" class="name">华硕（ASUS）G11飞行堡垒 台式游戏电脑主机 （I7-7700 8GB 128GSSD+1TB GTX1060 3G独显 800万色呼吸灯）</a>
+                            <p class="price">¥7488.00</p>
+                            <div class="clearfix">
+                                <div class="changeNum clearfix">
+                                    <span class="changeNum_left">-</span>
+                                    <input type="tel" value="1"/>
+                                    <span class="changeNum_right">+</span>
+                                </div>
+                                <div class="deleteBox">
+                                    <span class="deleteBox_top"></span>
+                                    <span class="deleteBox_bot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!--商品选着框区块-->
+                    <div class="product_check">
+                        <input class="jd_check_box jdzy_check" type="checkbox" checked="checked">
+                    </div>
+                    <div class="product_info clearfix">
+                        <a href="#" class="image"><img src="images/cart/honor.jpg" alt=""/></a>
+                        <div class="info">
+                            <a href="#" class="name">荣耀8 青春版 4G手机 珠光白 全网通(3G+32G)标配</a>
+                            <p class="price">¥1499.00</p>
+                            <div class="clearfix">
+                                <div class="changeNum clearfix">
+                                    <span class="changeNum_left">-</span>
+                                    <input type="tel" value="1"/>
+                                    <span class="changeNum_right">+</span>
+                                </div>
+                                <!--删除区块-->
+                                <div class="deleteBox">
+                                    <span class="deleteBox_top"></span>
+                                    <span class="deleteBox_bot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="jd_shop">
+        <div class="jd_shop_name">
+            <div class="shop_check">
+                <input class="jd_check_box jdzy_check" type="checkbox" checked="checked">
+            </div>
+            <div class="shop_title clearfix">
+                <img src="images/cart/buy-logo.png" alt=""/>
+                <span class="name">蔚蓝图书专营店</span>
+                <span class="tip">您享受满49元免运费服务</span>
+            </div>
+        </div>
+        <!--下面商品信息-->
+        <div class="jd_shop_product">
+            <ul>
+                <li>
+                    <div class="product_check">
+                        <input class="jd_check_box jdzy_check" type="checkbox" checked="checked">
+                    </div>
+                    <div class="product_info clearfix">
+                        <a href="#" class="image"><img src="images/cart/pscc.jpg" alt=""/></a>
+                        <div class="info">
+                            <a href="#" class="name">中文版Photoshop CC完全自学教程（附光盘）</a>
+                            <p class="price">¥49.00</p>
+                            <div class="clearfix">
+                                <!--改变数量-->
+                                <div class="changeNum clearfix">
+                                    <span class="changeNum_left">-</span>
+                                    <input type="tel" class="addd" value="1"/>
+                                    <span class="changeNum_right">+</span>
+                                </div>
+                                <!--删除区块-->
+                                <div class="deleteBox">
+                                    <span class="deleteBox_top"></span>
+                                    <span class="deleteBox_bot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="jd_option">
+    <!--商品选着框区块-->
+    <div class="option_check">
+        <input class="jd_check_box" id="jdzy" type="checkbox" >
+        <span class="jd_check_label ">全选</span>
+    </div>
+    <div class="option_info">
+        <p class="amount">合计:<span>¥9036.00</span></p>
+        <p class="amount_dec">总额:<span style="padding-right: 20px;">¥9036.00</span>立减:<span>¥0.00</span></p>
+    </div>
+    <div class="option_submit">
+        <a href="#">去结算(<span>3</span>)</a>
+    </div>
+</div>
+<div class="jd_win" style="display: none">
+    <div class="jd_win_box">
+        <div class="jd_win_box_con">确认要删除这些商品吗？</div>
+        <div class="jd_win_box_btn clearfix">
+            <a href="" class="cancel">取消</a>
+            <a href="" class="submit">确认</a>
+        </div>
+    </div>
+</div>
+<script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/*css  reset 重置默认样式 */
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+::before,::after{
+    content: "";
+    display: block;
+}
+ul,ol,li{
+    list-style: none;
+}
+body{
+    font-size: 14px;
+    font-family: "microsoft yahei",sans-serif;
+    color: #333;
+}
+h1,h2,h3,h4,h5{
+    font-size: 100%;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #333;
+}
+input,textarea{
+    padding-top: 0;
+    padding-bottom: 0;
+    outline: none;
+    border: none;
+    resize: none;
+    /*清除移动端默认的输入框的默认样式*/
+    -webkit-appearance: none;
+}
+select, input,img{
+    vertical-align: middle;
+}
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+/*css common 公用*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.ml_10{
+    margin-left: 10px;
+}
+.mr_10{
+    margin-right: 10px;
+}
+.mt_10{
+    margin-top: 10px;
+}
+.mb_10{
+    margin-bottom: 10px;
+}
+.w_100{
+    width: 100%;
+    display: block;
+}
+.hide {
+    display: none
+}
+.pr{
+    position: relative;
+}
+
+/*清楚浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    clear: both;
+}
+
+/*精灵图标*/
+[class^='icon_'],[class*=' icon_']{
+    background-image:url("../images/sprites.png");
+    background-size: 200px 200px;
+}
+

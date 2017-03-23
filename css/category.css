@@ -1,0 +1,191 @@
+@charset "utf-8";
+/*css  reset 重置默认样式 */
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: #F3F4F6;
+}
+body{
+    min-width: 320px;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: 'microsoft YaHei',sans-serif;
+    color: #333;
+}
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5{
+    font-size: 100%;
+    font-weight: normal;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    color: #333;
+}
+
+input,textarea{
+    outline: none;
+    border: none;
+    resize: none;
+    -webkit-appearance: none;
+}
+/*精灵图标*/
+[class^='icon_'],[class*=' icon_']{
+    background-image:url("../images/category/sprites.png");
+    background-size: 200px 200px;
+}
+/*头部搜索*/
+.top{
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #e0e0e0;
+    background: url("../images/category/header-bg.png");
+    background-size: 1px 44px;
+    z-index: 999;
+}
+.top::before,.top::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    padding: 12px 10px;
+    width: 40px;
+    height: 44px;
+    background: url("../images/category/sprites.png") no-repeat;
+    background-size: 200px 200px;
+    background-origin:content-box;
+    background-clip: content-box;
+}
+.top::before{
+    left: 0;
+    background-position: -20px 0;
+}
+.top::after{
+    right: 0;
+    background-position: -60px 0;
+}
+.top form{
+    padding: 0 40px;
+    width: 100%;
+    height: 44px;
+}
+.top form input{
+    width: 100%;
+    height: 30px;
+    margin-top: 7px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+.top h3{
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.top .icon_back{
+    height: 44px;
+    width: 40px;
+    background-position: -20px 0;
+    display: block;
+    padding:12px 10px;
+    background-clip: content-box;
+    background-origin: content-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.top .icon_menu{
+    height: 20px;
+    width: 20px;
+    background-position: -60px 0;
+    display: block;
+    margin:12px 10px;
+    background-clip: content-box;
+    background-origin: content-box;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.rmfl{
+	background-color: white;
+}
+/*============商品部分===============*/
+main{
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+}
+/*============左边商品分类栏===========*/
+.listLeft{
+    width: 90px;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+.listLeft ul{}
+.listLeft ul li a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    background: #f3f4f6;
+}
+.listLeft ul li.curr a{
+    border-right: 0;
+    color: #d8505c;
+    background-color: #fff;
+}
+/*=========右边商品展示部分============*/
+.partRight{
+    overflow: hidden;
+    padding: 10px;
+}
+.partRight a{
+    display: block;
+    width: 100%;
+}
+.partRight > a img{
+    width: 100%;
+    display: block;
+}
+.partRight h3{
+    font-size: 12px;
+    line-height: 30px;
+}
+.partRight ul{}
+.partRight ul li{
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+}
+.partRight ul li a img {
+    width: 62px;
+    height: 62px;
+}
+.partRight ul li p{
+    text-align: center;
+    padding: 5px 0;
+    font-size: 12px;
+}
